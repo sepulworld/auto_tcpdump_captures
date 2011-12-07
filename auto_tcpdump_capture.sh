@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:        	auto_tcpdump_capture
-# Purpose:	monitor interfaces for incrementing NIC errors
+# Purpose:	monitor interfaces for incrementing NIC errors, auto tcpdump
 #
 # Author:      zane williamson
 #
