@@ -1,0 +1,18 @@
+#-------------------------------------------------------------------------------
+# Name:         auto_tcpdump_capture
+# Purpose:      monitor interfaces for incrementing NIC errors
+#
+# Author:      zane williamson
+#
+# Created:     12/5/2011
+# Copyright:   (c) zane 2011
+# Licence:     GPL
+#-------------------------------------------------------------------------------
+
+README
+
+This script should run in the background and will monitor the "errors" counter for both Eth0 and Eth1.
+tcpdump will run and capture a 5MB capture on the interface that has the error counter increment from start time of the script. 
+it will then exit.
+
+

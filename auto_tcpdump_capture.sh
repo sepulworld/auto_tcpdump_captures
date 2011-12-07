@@ -34,11 +34,13 @@ COUNTER_eth1=`cat temp_error_count_eth1.txt`
 if [ $COUNTER_eth0 -gt $INITIAL_ETH0_COUNTER ] ;
         then tcpdump -vv -i eth1 ! port 22 -C5MB -w eth1_error_increment_capture.pcap
 	x=0
+	echo "`date`: error increment on eth0, tcpdump capture run.  See pcap located in directory of script. Restart script if needed." >> /var/log/message
 	exit	
 
 
 elif [ $COUNTER_eth1 -gt $INITIAL_ETH1_COUNTER ] ; 
 	then tcpdump -vv -i eth0 ! port 22 -C5MB -w eth0_error_increment_capture.pcap
+	echo "`date`: error increment on eth1, tcpdump capture run.  See pcap located in directory of script. Restart script if needed." >> /var/log/message
 	x=0
 	exit
 
