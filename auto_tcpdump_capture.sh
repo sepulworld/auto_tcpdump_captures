@@ -50,6 +50,8 @@ sleep 2 ;
 
 fi
 
+echo "`date`: auto_tcpdump_capture.sh process has stopped and initiated the tcpdump" >> /var/log/messages
+
 done
 
 
