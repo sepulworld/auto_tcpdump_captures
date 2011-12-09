@@ -43,8 +43,10 @@ do
 		*	) echo ""
 			  echo "Unimplemented option chosen."
 			  USAGE  # default
+	exit 0;;
 	esac
 done
+
 
 shift $(($OPTIND - 1))
 #  Decrements the argument pointer so it points to next argument.
