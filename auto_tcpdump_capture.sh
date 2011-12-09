@@ -33,6 +33,12 @@ function USAGE ()
 
 }
 
+# if no packet number paramet specified print usage for user
+if [ $# -lt 1 ]
+	then USAGE;
+exit 0 
+fi
+
 #Process Arguments
 while getopts ":p:?" Option
 do
@@ -42,8 +48,7 @@ do
 			  exit 0;;
 		*	) echo ""
 			  echo "Unimplemented option chosen."
-			  USAGE  # default
-	exit 0;;
+			USAGE  
 	esac
 done
 
